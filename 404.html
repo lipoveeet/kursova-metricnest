@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>404 – Сторінку не знайдено | MetricNest</title>
+    <meta name="description" content="Сторінку не знайдено. Перейдіть на головну, дізнайтеся про сервіс, перегляньте блог або відкрийте контакти.">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark" id="ftco-navbar" aria-label="Основна навігація">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">MetricNest</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Відкрити меню">
+	        <span class="oi oi-menu"></span> Меню
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Головна</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">Про нас</a></li>
+	          <li class="nav-item"><a href="index.html#features" class="nav-link">Показники</a></li>
+	          <li class="nav-item"><a class="nav-link" href="index.html#pricing">Тарифи</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Блог</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Контакти</a></li>
+	          <li class="nav-item cta"><a href="contact.html" class="nav-link" role="button" data-toggle="modal" data-target="#service-modal"><span>Обговорити проєкт</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+    <main class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="display-1 text-primary font-weight-bold">404</p>
+            <h1 class="mb-4">Сторінку не знайдено</h1>
+            <p class="mb-4">За цією адресою немає сторінки. Поверніться на головну або скористайтеся меню, щоб перейти до потрібного розділу.</p>
+            <a href="index.html" class="btn btn-primary py-3 px-4">На головну</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <div class="modal fade" id="service-modal" tabindex="-1" role="dialog" aria-labelledby="service-modal-title" aria-describedby="service-modal-description" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h4" id="service-modal-title">Знайомство з MetricNest</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Закрити вікно"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <p id="service-modal-description">Розкажіть про себе та оберіть напрям бізнесу, який хочете краще розуміти.</p>
+            <form id="service-form" novalidate>
+              <div class="form-group">
+                <label for="service-name">Ваше ім’я</label>
+                <input class="form-control" id="service-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="80" placeholder="Олександр">
+              </div>
+              <div class="form-group">
+                <label for="service-email">Робоча електронна пошта</label>
+                <input class="form-control" id="service-email" name="email" type="email" autocomplete="email" required maxlength="160" placeholder="name@company.com">
+              </div>
+              <div class="form-group">
+                <label for="service-company">Компанія</label>
+                <input class="form-control" id="service-company" name="company" type="text" autocomplete="organization" required minlength="2" maxlength="100" placeholder="Назва компанії">
+              </div>
+              <div class="form-group">
+                <label for="service-area">Напрям моніторингу</label>
+                <select class="form-control" id="service-area" name="area" required>
+                  <option value="">Оберіть напрям</option>
+                  <option value="sales">Продажі</option>
+                  <option value="finance">Фінанси</option>
+                  <option value="marketing">Маркетинг</option>
+                  <option value="operations">Операційні показники</option>
+                  <option value="customers">Клієнтський досвід</option>
+                </select>
+              </div>
+              <button class="btn btn-primary py-3 px-4" type="submit">Готово</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/service-modal.js"></script>
+  </body>
+</html>
