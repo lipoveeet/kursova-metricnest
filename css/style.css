@@ -9479,3 +9479,12 @@ textarea.form-control {
     padding-right: 16px !important;
   }
 }
+
+/* Виправлення горизонтальної прокрутки на мобільних екранах */
+html, body {
+  overflow-x: hidden;
+}
+
+iframe {
+  max-width: 100%;
+}
